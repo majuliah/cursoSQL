@@ -31,6 +31,7 @@ CREATE TABLE ENDERECO
     ID_CLIENTE INT UNIQUE,
     FOREIGN KEY(ID_CLIENTE) REFERENCES CLIENTE(IDCLIENTE)
 );
+/* a foreign key ficar na tabela mais fraca é porque não faria muito sentido o cliente ter a chave do telefone e do endereço.*/
 
 CREATE TABLE TELEFONE
 (
